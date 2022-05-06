@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro Programa</title>
+    <style>
+        body{
+            background-image: linear-gradient( purple, rgb(130 0 140), rgb(120 0 120) );
+            color:lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá Mundo !</h1>
+    <p>Já me livrei da maldição</p>
+    <script>
+       var n1 = Number.parseFloat(window.prompt('Digite um número: '))//parseFloat números com casa decimais 10.5
+       var n2 = Number.parseInt(window.prompt('Digite outro número: '))//parseInt para numeros 10
+       var n3 = Number(window.prompt('Digite mais um número: ')) //o Number, o prompt analisa se o valor digitado é real ou inteiro
+       var soma = n1 + n2 + n3
+       window.alert(`A soma entre ${n1}, ${n2} e ${n3} é igual a : ${soma}`)//colocar toda a informação dentro da crase
+                //window.alert('A soma dos números é: ' + soma)
+                //Para alterar de número para string
+               // window.alert('A soma dos números é: ' + String(soma) )
+                //ou n.toString())
+    </script>
+</body>
+</html>
