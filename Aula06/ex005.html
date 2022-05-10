@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros Passos com o DOM</title>
+    <style>
+        body{
+            background-color: rgb(36, 36, 231);
+            color: white;
+            font: normal 1.3em Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando Estudos com o DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div>Clique em mim</div>
+    <script>
+        //window.document.write(window.document.URL) mostra a URL 
+        //window.document.write(window.navigator.appName) mostra qual  navegador
+
+        // Acesso aos Elementos
+
+        var p1 = window.document.getElementsByTagName('p') [0]//o zero é a primeira linha// E esse acesso é por tag
+        //window.document.write(p1.innerText)//Aparecerá na tela o conteudo da primeira tag <p>
+        p1.style.color = 'red' //O conteudo da tag p ficará vermelho
+
+    </script>
+</body>
+</html>
