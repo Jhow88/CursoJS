@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício Condição Simples</title>
+</head>
+<body>
+    Digite a sua nacionalidade <input type="text" name="pais" id="pais">
+    Clique aqui ! <input type="button" value="verificar" onclick="verificar()">
+    <div id="resp">
+        
+    </div> 
+<script>
+    function verificar(){
+        var p = window.document.getElementById("pais")
+        var resp = window.document.getElementById('resp')
+        var textbl  = (p.value)
+        resp.innerHTML = `Viva o (a) ${textbl} `
+    if(textbl == 'Brasil' )
+        resp.innerHTML += `<p>Você é Brasileiro !</p>`
+    }
+   
+
+</script>
+</body>
+</html>
