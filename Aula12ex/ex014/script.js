@@ -4,8 +4,7 @@ function carregar(){
     var data = new Date()
     var hora = data.getHours()
     msg.innerHTML = `Agora são ${hora} horas`
-
-    if( hora > 0 && hora < 13){
+    if( hora >= 0 && hora < 13){
         img.scr = 'manha(1).jpg'
         document.body.style.background = '#c67876'
         msg.innerHTML += `<p>Bom Dia !</p>` 
