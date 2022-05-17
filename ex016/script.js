@@ -8,17 +8,29 @@ function contar() {
         window.alert('[Erro] Digite um valor!')
     
   }else{
-     res.innerHTML = 'Contando'
+     res.innerHTML = 'Contando:<br>'
 
      var i = Number(inicio.value)
      var f = Number(fim.value)
      var p = Number(passo.value)
-     
-    for (let index = i ; index <= f ; index += p) {
+     if(p <= 0){
+       window.alert('Número Inválido! Considerando passo 1 !')
+       p = 1 
+     }
+
+     if (i < f) {
+       for (let index = i ; index <= f ; index += p) {
        
-      res.innerHTML += ` ${(index)} \u{1F449}`
+        res.innerHTML += ` ${(index)} \u{1F449} `
+      }      
+      }else{ 
+        for (let index = i; index >= f ; index-= p){ 
+          
+        res.innerHTML += `${(index)} \u{1f449} `
+      }   
     }
-   
+    res.innerHTML +=`\u{1F3c1}`   
   }
-  
+   
 }
+  
